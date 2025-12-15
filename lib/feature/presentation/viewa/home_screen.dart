@@ -11,6 +11,19 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: NavigationBar(onDestinationSelected: (value) {
+        
+      }, destinations: 
+      const <Widget>[
+          NavigationDestination(
+            selectedIcon: Icon(Icons.home),
+            icon: Icon(Icons.home_outlined),
+            label: 'Today',
+          ),
+          NavigationDestination(icon: Icon(Icons.calendar_month), label: "Calender"),
+          NavigationDestination(icon: Icon(Icons.star_half), label: "Self Care"),
+          NavigationDestination(icon: Icon(Icons.moving_outlined), label: "Mine")
+      ], ),
       backgroundColor: Colors.lightBlue,
       appBar: AppBar(
         leading:  GestureDetector(child: Icon(Icons.settings)),

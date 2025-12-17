@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:period_tracker/feature/calender/presentation/view/calender_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,10 +27,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: NavigationBar(onDestinationSelected: (value) {
+      bottomNavigationBar: NavigationBar( selectedIndex: _tabController.index,onDestinationSelected: (value) {
+     
+       setState(() {
+            _tabController.index = value;
+          });
         
       }, destinations: 
-      const <Widget>[
+      [
     
           NavigationDestination(
             selectedIcon: Icon(Icons.home),
@@ -85,6 +90,9 @@ Padding(
            ],)
         
         ),
+          const Center(child: CalenderScreen()),
+           const Center(child: CalenderScreen()),
+            const Center(child: CalenderScreen()),
         
    ]   ),
 

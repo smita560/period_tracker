@@ -7,16 +7,42 @@ class CalenderScreen extends StatefulWidget {
   State<CalenderScreen> createState() => _CalenderScreenState();
 }
 
-class _CalenderScreenState extends State<CalenderScreen> {
+class _CalenderScreenState extends State<CalenderScreen> with TickerProviderStateMixin{
+  late final TabController _tabcontroller;
+  @override
+ void initState(){
+  super.initState();
+  _tabcontroller= TabController(length: 2, vsync: this);
+ }
+@override
+void dispose(){
+  _tabcontroller.dispose();
+  super.dispose();
+}
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.settings),
-        // title: TabBar(tabs: [
-        //    Text("Month"),
-        //    Text("Year")
-        // ]),
+        title: Container(
+          height: 30,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(width: 2)
+          ),
+          child: TabBar
+          (
+            controller: _tabcontroller,
+            indicator: BoxDecoration(
+              borderRadius: BorderRadius.circular(8)
+            ),
+            tabs: 
+          [
+            
+             Text("Month"),
+             Text("Year")
+          ]),
+        ),
         actions: [
         Icon(Icons.notifications),
           

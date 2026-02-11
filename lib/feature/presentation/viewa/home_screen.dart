@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:period_tracker/feature/calender/presentation/view/calender_screen.dart';
+import 'package:period_tracker/feature/mine/presentation/view/mine_screen.dart';
+import 'package:period_tracker/feature/selfcare/presentation/views/self_care.screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -91,8 +93,8 @@ Padding(
         
         ),
           const Center(child: CalenderScreen()),
-           const Center(child: CalenderScreen()),
-            const Center(child: CalenderScreen()),
+           const Center(child: SelfcareScreen()),
+            const Center(child: MineScreen()),
         
    ]   ),
 

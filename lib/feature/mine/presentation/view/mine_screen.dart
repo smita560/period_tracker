@@ -149,6 +149,130 @@ class _MineScreenState extends State<MineScreen> {
                     Spacer(),Icon(Icons.ios_share_sharp, color: Colors.blueGrey,),
                   ],
                 ),
+                SizedBox(height: 12,),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                           
+                            SizedBox(width: 8),
+                            Text(
+                              "My Cycle",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Spacer(),
+                             Icon(Icons.arrow_forward_ios, color: Colors.white,size: 16,),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "18 Cycle logged",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(height: 12,),
+                        Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.lightBlue,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(alignment: Alignment.topRight,
+                                      child: Icon(
+                                        Icons.dew_point,
+                                        color: Colors.white,
+                                        size: 42,),
+                                    ),
+                                       Text(
+                                  "4 Days",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  
+                                ),
+                                 Text(
+                                  "Average Period",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                  
+                                ),
+                                  ],
+                                )
+                                
+                              ),
+                            ),
+                            SizedBox(width: 12,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.lightBlue,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child:Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(alignment: Alignment.topRight,
+                                      child: Icon(
+                                        Icons.rounded_corner,
+                                        color: Colors.white,
+                                        size: 42,),
+                                    ),
+                                       Text(
+                                  "28 Days",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  
+                                ),
+                                 Text(
+                                  "Average cycle",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                  
+                                ),
+                                  ],
+                                )
+                                
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ],

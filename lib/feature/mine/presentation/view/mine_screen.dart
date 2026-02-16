@@ -134,7 +134,7 @@ class _MineScreenState extends State<MineScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 12,),
+                SizedBox(height: 12),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -146,10 +146,11 @@ class _MineScreenState extends State<MineScreen> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Spacer(),Icon(Icons.ios_share_sharp, color: Colors.blueGrey,),
+                    Spacer(),
+                    Icon(Icons.ios_share_sharp, color: Colors.blueGrey),
                   ],
                 ),
-                SizedBox(height: 12,),
+                SizedBox(height: 12),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.brown,
@@ -162,7 +163,6 @@ class _MineScreenState extends State<MineScreen> {
                       children: [
                         Row(
                           children: [
-                           
                             SizedBox(width: 8),
                             Text(
                               "My Cycle",
@@ -173,7 +173,11 @@ class _MineScreenState extends State<MineScreen> {
                               ),
                             ),
                             Spacer(),
-                             Icon(Icons.arrow_forward_ios, color: Colors.white,size: 16,),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                              size: 16,
+                            ),
                           ],
                         ),
                         SizedBox(height: 10),
@@ -185,7 +189,7 @@ class _MineScreenState extends State<MineScreen> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 12,),
+                        SizedBox(height: 12),
                         Row(
                           children: [
                             Container(
@@ -193,86 +197,130 @@ class _MineScreenState extends State<MineScreen> {
                                 color: Colors.lightBlue,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child:Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Align(alignment: Alignment.topRight,
-                                      child: Icon(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "4 Days",
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Average Period",
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.normal,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Icon(
                                         Icons.dew_point,
-                                        color: Colors.white,
-                                        size: 42,),
-                                    ),
-                                       Text(
-                                  "4 Days",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
+                                        color: Colors.black,
+                                        size: 42,
+                                      ),
+                                    ],
                                   ),
-                                  
-                                ),
-                                 Text(
-                                  "Average Period",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.normal,
-                                  ),
-                                  
-                                ),
-                                  ],
-                                )
-                                
+                                ],
                               ),
                             ),
-                            SizedBox(width: 12,),
+                            SizedBox(width: 12),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.lightBlue,
+                                color: Colors.lime,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child:Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Align(alignment: Alignment.topRight,
-                                      child: Icon(
-                                        Icons.rounded_corner,
-                                        color: Colors.white,
-                                        size: 42,),
-                                    ),
-                                       Text(
-                                  "28 Days",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.bold,
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "28 Days",
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Average Cycle",
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.normal,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Icon(
+                                        Icons.roundabout_right,
+                                        color: Colors.black,
+                                        size: 42,
+                                      ),
+                                    ],
                                   ),
-                                  
-                                ),
-                                 Text(
-                                  "Average cycle",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.normal,
-                                  ),
-                                  
-                                ),
-                                  ],
-                                )
-                                
+                                ],
                               ),
-                            )
+                            ),
                           ],
                         ),
+                       
                       ],
                     ),
                   ),
-                )
+                ),
+                 SizedBox(height: 12,),
+                        Container(
+                          decoration: BoxDecoration(
+                           color: Colors.brown,
+                    borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text("timeline",style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18
+                                    ),),
+                                    Spacer(),
+                                    Icon(
+                                    Icons.arrow_forward_ios,
+                                    color: Colors.white,
+                                    size: 16,
+                                  ),
+                                  ],
+                                ),
+                                Text("All records are here ",style: TextStyle(fontSize: 16,color: Colors.white),)
+                              ],
+                            ),
+                          ),
+                        ),
               ],
             ),
           ],
